@@ -1,0 +1,311 @@
+html{
+    scroll-behavior: smooth;
+    
+    
+}
+body{
+    /* background-color: rgb(227, 250, 235); */
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+.barnav{
+    
+    background-color: #dfe7e3;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    border-bottom: 1PX solid #355e3b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    
+}
+.logo{
+    height: 100%;
+    width: 40%;
+    margin-left: 10%;
+    float: left;
+    
+
+}
+
+.logo img{
+    height: 100%;
+}
+
+.nav{
+    
+    width: 620px;
+    float: left;
+    font-size: 23px;
+    font-family: "Outfit";
+    box-sizing: border-box;
+    padding: 30px 0px;
+    position: absolute;
+    right: 10%;
+    
+
+}
+.Inicio{
+    height: 100%;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+    
+}
+.nav a{
+    
+    text-decoration: none;
+    color: #355e3b;
+    
+}
+.nav a:hover{
+    color: #28c961; /* Cambié el color de hover a un verde más brillante */
+    border-bottom: 2px solid #28c961;
+    
+
+}
+.fondo{
+    
+    height: 100vh;
+    width: 100%;
+}
+.fondo video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    position: relative;
+    
+}
+.contentFondo{
+    width: 40%;
+    font-size: 1.5em;
+    font-family: "Outfit";
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: #f1f1f1;
+
+
+}
+.contentFondo h1{
+    margin-bottom:50px;
+    color: rgb(227, 250, 235);
+    font-weight: 700;
+    font-size: 3em;
+}
+.contentFondo p{
+    font-size: 1em;
+    line-height: 1.5;
+}
+button{
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(227, 250, 235);
+    border-radius: 15px;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #28c961; /* Cambié el color de hover del botón */
+    color: white; /* Cambié el color del texto en hover a blanco */
+    box-shadow: 0px 5px 15px rgba(40, 201, 97, 0.3); /* Añadí una sombra para dar un efecto de elevación */
+}
+.contentFondo a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+.inter{
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    border-bottom: 2px solid#28c961;
+}
+
+.seccInfo{
+    margin: 0 auto;
+    width: 100%;
+    height: 1000px;
+    
+}
+.info1{
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 600px;
+    width: 80%;
+    
+
+}
+.img1{
+    
+    height: 100%;
+    width: 30%;
+    float: left;
+   
+
+
+}
+.img1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    position: relative;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+.content1{
+    
+    height: 100%;
+    width: 50%;
+    float: left;
+    margin-left: 20%;
+    font-family: "Outfit";
+    
+}
+.content1 img{
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.content1 h1{
+    color: #28c961;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.content1 p{
+    line-height: 1.5;
+    color: #444444;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.inter2{
+    height: 200px;
+    width: 100%;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.15); /* Sombra suave y difusa debajo */
+    z-index: 1; /* Asegura que el div esté sobre la imagen en el orden de apilamiento */
+    position: relative; /* Necesario para que la sombra se posicione correctamente */
+}
+.inter2 img{
+    height: 100%;
+    width: 100%;
+    
+}
+.info2{
+    margin: 0;
+    height: 1900px;
+    width: 100%;
+    background-color: #a0c4a2;
+   
+
+}
+
+.div2{
+    
+    margin: auto auto;
+   
+    width: 100%;
+
+}
+
+.img2{
+        margin: auto auto;
+        border-radius: 10px;
+        background-image: url("/img/perro1plano.jpg");
+        height: 500px;
+        width: 100%;
+        
+        background-attachment: fixed; /*Fondo fijo, para dar efecto de
+        paralaje*/
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover; /*Con cover se cubre todo el contenedor en
+        ancho y alto*/
+        
+}
+
+.content2{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    font-family: "Outfit";
+}
+.cards{
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+}
+.card{
+    text-align: center;
+    height: 100%;
+    width: 25%;
+    border: 1px solid black;
+    float: left;
+    box-sizing: border-box;
+    background-color: #dfe7e3;
+    border-radius: 20px;
+    box-shadow: 0 40px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave en hover */
+}
+
+.card:hover {
+    transform: translateY(-15px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+}
+.card:nth-child(1){
+    margin-left: 9%;
+}
+.card:nth-child(2){
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.card:nth-child(3){
+    margin-right: 5%;
+}
+
+.content2>h1{
+    color: #183519;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    
+}
+
+.card h1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 28px;
+    color: #355e3b;
+    
+}
+
+.card p{
+    padding: 30px;
+    padding-top: 20px;
+    text-align: center;
+    
+    color: #505050; /* Color gris para el texto */
+    line-height: 1.6;
+    
+    margin: 0; /* Mejora la legibilidad */
+}
+.card img{
+    height: 40px;
+    width: 40px;
+
+}
+
