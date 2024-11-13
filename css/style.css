@@ -225,7 +225,7 @@ button:hover {
 .img2{
         margin: auto auto;
         border-radius: 10px;
-        background-image: url("/img/perro1plano.jpg");
+        background-image: url("img/perro1plano.jpg");
         height: 500px;
         width: 100%;
         
