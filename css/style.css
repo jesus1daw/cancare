@@ -192,7 +192,7 @@ button:hover {
 .info2 {
     width: 100%;
     /* background-color: #a0c4a2; */
-    background-image: url('/img/blurry-gradient-haikei.svg');
+    background-image: url('blurry-gradient-haikei.svg');
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 50px;
