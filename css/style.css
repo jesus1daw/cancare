@@ -9,7 +9,8 @@ body {
 
 /* Barra de navegación */
 .barnav {
-    background-color: #dfe7e3;
+    /* background-color: #dfe7e3; */
+    background-color: #000000;
     width: 100%;
     height: 100px;
     box-sizing: border-box;
@@ -22,6 +23,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .logo {
@@ -40,6 +42,7 @@ body {
     font-family: "Outfit";
     gap: 50px;
     align-items: center;
+    margin-right: 200px;
 }
 
 .Inicio {
@@ -73,7 +76,7 @@ body {
 }
 
 .contentFondo {
-    width: 80%;
+    width: 40%; /*Posible error responsive tablets*/
     font-size: 1.5em;
     font-family: "Outfit";
     position: absolute;
@@ -127,11 +130,12 @@ button:hover {
 .seccInfo {
     margin: 0 auto;
     width: 100%;
+    margin-top: 100px;
 }
 
 .info1 {
     margin: 0 auto;
-    margin-top: 100px;
+    
     width: 80%;
     display: flex;
     gap: 20px;
@@ -187,7 +191,10 @@ button:hover {
 
 .info2 {
     width: 100%;
-    background-color: #a0c4a2;
+    /* background-color: #a0c4a2; */
+    background-image: url('/img/blurry-gradient-haikei.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-bottom: 50px;
 }
 
@@ -208,10 +215,15 @@ button:hover {
 .content2 {
     width: 80%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     font-family: "Outfit";
     color: #194127;
+    border-top: dashed 1px #194127;
+    
+}
+.content2 h1{
+    font-size: 50px;
 }
 
 /* Tarjetas */
@@ -364,7 +376,7 @@ button:hover {
     .nav {
         width: 100%;
         display: flex;
-        
+        margin-right: 0;
         align-items: center;
         padding: 0;
         margin-top: 10px;
@@ -385,7 +397,7 @@ button:hover {
         text-align: center;
     }
     .cards{
-        margin-top: 60px;
+        margin-top: 40px;
     }
     .inter2{
         height: 60px;
@@ -404,6 +416,44 @@ button:hover {
         font-size: 12px;
 
     }
+    .inter{
+        height: 50px;
+    }
+    .info1{
+        margin-top: 50px;
+    }
+     .seccInfo{
+        margin-top: 60px;
+    }
 }
 
 
+@keyframes show{
+    from {
+        opacity: 0.0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.card{
+    view-timeline-name: --cartas ;
+    view-timeline-axis: block;
+
+    animation-timeline: --cartas;
+    animation-name: show;
+    animation-range: entry 25%;
+    animation-fill-mode: both;
+}
+.info1{
+    view-timeline-name: --cartas ;
+    view-timeline-axis: block;
+
+    animation-timeline: --cartas;
+    animation-name: show;
+    animation-range: entry 15%;
+    animation-fill-mode: both;
+}
