@@ -223,6 +223,7 @@ button:hover {
     text-align: center;
     width: 100%;
     max-width: 300px;
+    border: solid black 1px;
     background-color: #dfe7e3;
     border-radius: 20px;
     box-shadow: 0 40px 20px rgba(0, 0, 0, 0.1);
@@ -254,7 +255,7 @@ button:hover {
 }
 
 /* Diseño responsive */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .nav {
         font-size: 18px;
         gap: 20px;
@@ -296,51 +297,69 @@ button:hover {
 }
 
 @media (max-width: 480px) {
+    .contentFondo {
+        width: 90%;
+        top: 20%; /* Reducir la separación superior para mejor centrado */
+        left: 5%;
+        font-size: 1em;
+        text-align: center; /* Centrar el contenido en pantallas pequeñas */
+    }
+    
+    .contentFondo h1 {
+        font-size: 1.8em; /* Reducir el tamaño del encabezado */
+        margin-bottom: 15px;
+    }
+
+    .contentFondo p {
+        font-size: 0.85em; /* Reducir el tamaño del párrafo */
+        line-height: 1.3;
+        margin-bottom: 15px; /* Añadir espacio inferior entre párrafos */
+    }
+
+    button {
+        width: 120px;
+        height: 40px;
+        font-size: 0.85em;
+        padding: 8px 10px; /* Ajustar padding para hacerlo más compacto */
+        margin-top: 10px;
+    }
+
+    .contentFondo a {
+        font-size: 1em; /* Ajustar el tamaño de fuente del enlace */
+    }
     .barnav {
-        flex-direction: column;
-        height: auto;
+        height: 100px;
         padding: 10px;
-    }
-
-    .logo {
-        width: 100%;
-        text-align: center;
-        margin: 0;
-    }
-
-    .nav {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .contentFondo {
-        width: 90%;
-        top: 15%;
-        left: 5%;
-        font-size: 1em;
+    .logo {
+        width: 50%; /* Ajustar el tamaño del logo */
+        margin: 0 auto;
+        text-align: center;
+        height: 60%;
     }
 
-    .contentFondo h1 {
-        font-size: 2em;
-        margin-bottom: 20px;
-    }
-
-    .contentFondo p {
-        font-size: 0.8em;
-        line-height: 1.3;
-    }
-
-    button {
-        width: 130px;
-        height: 40px;
-        font-size: 0.9em;
-    }
-
-    .contentFondo a {
-        font-size: 1.2em;
-    }
-
-    .card {
+    .nav {
         width: 100%;
+        display: flex;
+        
+        align-items: center;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .Inicio {
+        width: 100%;
+        margin: 6px 0;
+        font-size: 13px;
+    }
+
+    .nav a {
+        font-size: 1em; /* Reducir el tamaño de la fuente */
     }
 }
+
+
