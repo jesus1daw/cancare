@@ -315,6 +315,18 @@ button:hover {
         line-height: 1.3;
         margin-bottom: 15px; /* Añadir espacio inferior entre párrafos */
     }
+    .info1 .img1 img {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        max-height: 250px; /* Ajusta el máximo a una altura más pequeña */
+        width: 100%;
+        object-fit: cover ; /* Asegura que la imagen se recorte en lugar de deformarse */
+    }
+    .info1 .content1 h1{
+        font-size: 30px;
+    }
+    .info1 .content1 p{
+        font-size: 15px;
+    }
 
     button {
         width: 120px;
