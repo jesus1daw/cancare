@@ -201,6 +201,7 @@ button:hover {
 
 .div2 {
     width: 100%;
+    
 }
 
 .img2 {
@@ -264,6 +265,10 @@ button:hover {
     font-size: 28px;
     color: #355e3b;
 }
+.card:nth-of-type(3) h1{
+    font-size: 26px;
+}
+
 
 .card p {
     color: #505050;
@@ -410,9 +415,12 @@ button:hover {
     }
     .div2{
         height: 200px;
+        
     }
     .img2{
         height: 100%;
+        background-attachment: scroll;
+        
     }
 
     .card{
