@@ -153,6 +153,8 @@ button:hover {
 .content1 {
     flex: 1 1 60%;
     font-family: "Outfit";
+    margin-top: 100px;
+    
 }
 
 .content1 img {
@@ -207,7 +209,9 @@ button:hover {
     width: 80%;
     margin: auto;
     margin-top: 100px;
+    text-align: center;
     font-family: "Outfit";
+    color: #194127;
 }
 
 /* Tarjetas */
@@ -321,6 +325,9 @@ button:hover {
         width: 100%;
         object-fit: cover ; /* Asegura que la imagen se recorte en lugar de deformarse */
     }
+    .content1{
+        margin-top: 10px;
+    }
     .info1 .content1 h1{
         font-size: 30px;
     }
@@ -371,6 +378,31 @@ button:hover {
 
     .nav a {
         font-size: 1em; /* Reducir el tamaño de la fuente */
+    }
+
+    .content2 h1 {
+        font-size: 1.5em; /* Reducir el tamaño del encabezado */
+        text-align: center;
+    }
+    .cards{
+        margin-top: 60px;
+    }
+    .inter2{
+        height: 60px;
+    }
+    .div2{
+        height: 200px;
+    }
+    .img2{
+        height: 100%;
+    }
+
+    .card{
+        height: 320px;
+    }
+    .card p{
+        font-size: 12px;
+
     }
 }
 
