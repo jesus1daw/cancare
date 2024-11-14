@@ -193,7 +193,7 @@ button:hover {
 .info2 {
     width: 100%;
     /* background-color: #a0c4a2; */
-    background-image: url('blurry-gradient-haikei.svg');
+    background-image: url('pruebafondoverde.svg');
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 50px;
@@ -220,7 +220,7 @@ button:hover {
     text-align: center;
     font-family: "Outfit";
     color: #194127;
-    border-top: dashed 1px #194127;
+    /* border-top: dashed 1px #194127; */
     
 }
 .content2 h1{
