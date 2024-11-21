@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;        
 }
 
 body {
@@ -110,7 +110,6 @@ button {
 
 button:hover {
     background-color: #28c961;
-    color: white;
     box-shadow: 0px 5px 15px rgba(40, 201, 97, 0.3);
 }
 
@@ -139,8 +138,8 @@ button:hover {
     
     width: 80%;
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 100px;
+    
 }
 
 .img1 {
@@ -156,7 +155,7 @@ button:hover {
 }
 
 .content1 {
-    flex: 1 1 60%;
+    flex: 1 0 60%;
     font-family: "Outfit";
     margin-top: 100px;
     
@@ -221,11 +220,12 @@ button:hover {
     text-align: center;
     font-family: "Outfit";
     color: #194127;
-    /* border-top: dashed 1px #194127; */
+    border-top: dashed 1px #194127;
     
 }
 .content2 h1{
     font-size: 50px;
+    font-weight: bold;
 }
 
 /* Tarjetas */
@@ -276,6 +276,32 @@ button:hover {
     margin: 0;
 }
 
+
+.ubicacion{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap:10%
+}
+
+.ubicacion img{
+    width: 30%;
+}
+
+.contentUbi{
+    width: auto;
+    width: 60%;
+
+
+}
+.contentUbi h1{
+    
+    text-align: center;
+}
+.contentUbi p{
+    text-align: center;
+    
+}
 /* Diseño responsive */
 @media (max-width:1900px){
     .contentFondo{
@@ -311,6 +337,7 @@ button:hover {
 
     .info1 {
         flex-direction: column;
+        gap: 0px;
     }
 
     .img1,
@@ -455,6 +482,8 @@ button:hover {
 }
 
 .card{
+
+    
     view-timeline-name: --cartas ;
     view-timeline-axis: block;
 
