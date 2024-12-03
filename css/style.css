@@ -175,6 +175,7 @@ button:hover {
     margin-bottom: 50px;
 }
 
+
 .content1 p {
     line-height: 1.5;
     color: #444444;
@@ -284,15 +285,21 @@ button:hover {
     gap:10%
 }
 
-.ubicacion img{
+.ubi{
+    margin-top: 100px;
     width: 30%;
+}
+.ubi img{
+    height: 80%;
+    width: 100%;
 }
 
 .contentUbi{
     width: auto;
     width: 60%;
-
-
+    flex: 1 0 60%;
+    font-family: "Outfit";
+    margin-top: 100px;
 }
 .contentUbi h1{
     
@@ -301,6 +308,20 @@ button:hover {
 .contentUbi p{
     text-align: center;
     
+}
+.contentUbi h1{
+    color: #28c961;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.contentUbi p {
+    line-height: 1.5;
+    color: #444444;
+    font-size: 25px;
+    margin-bottom: 40px;
 }
 /* Diseño responsive */
 @media (max-width:1900px){
