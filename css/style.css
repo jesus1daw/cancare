@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;        
 }
 
 body {
@@ -110,7 +110,6 @@ button {
 
 button:hover {
     background-color: #28c961;
-    color: white;
     box-shadow: 0px 5px 15px rgba(40, 201, 97, 0.3);
 }
 
@@ -139,8 +138,8 @@ button:hover {
     
     width: 80%;
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 100px;
+    
 }
 
 .img1 {
@@ -156,7 +155,7 @@ button:hover {
 }
 
 .content1 {
-    flex: 1 1 60%;
+    flex: 1 0 60%;
     font-family: "Outfit";
     margin-top: 100px;
     
@@ -175,6 +174,7 @@ button:hover {
     margin-top: 0;
     margin-bottom: 50px;
 }
+
 
 .content1 p {
     line-height: 1.5;
@@ -197,6 +197,7 @@ button:hover {
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 50px;
+    
 }
 
 .div2 {
@@ -212,6 +213,8 @@ button:hover {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    /* border-radius: 500px; */
+    
 }
 
 .content2 {
@@ -221,11 +224,12 @@ button:hover {
     text-align: center;
     font-family: "Outfit";
     color: #194127;
-    /* border-top: dashed 1px #194127; */
+    border-top: dashed 1px #194127;
     
 }
 .content2 h1{
     font-size: 50px;
+    font-weight: bold;
 }
 
 /* Tarjetas */
@@ -277,6 +281,7 @@ button:hover {
 }
 
 
+<<<<<<< HEAD
 .seccMapa{
     width: 100%;
     position: absolute;
@@ -306,6 +311,54 @@ button:hover {
     height: 100%;
 }
 
+=======
+.ubicacion{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap:10%;
+}
+
+.ubi{
+    margin-top: 70px;
+    width: 30%;
+    
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.ubi img{
+    height: 100%;
+    width: 100%;
+}
+
+.contentUbi{
+    
+    width: 60%;
+    flex: 1 0 60%;
+    font-family: "Outfit";
+    margin-top: 100px;
+    
+}
+
+
+.contentUbi h1{
+    color: #28c961;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.contentUbi p {
+    line-height: 1.5;
+    color: #444444;
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.contentUbi b:nth-child(2){
+    color: #355e3b ;
+}
+>>>>>>> refs/remotes/origin/main
 /* Diseño responsive */
 @media (max-width:1900px){
     .contentFondo{
@@ -323,7 +376,7 @@ button:hover {
         left: 5%;
         font-size: 1.2em;
     }
-
+   
     .contentFondo h1 {
         font-size: 2.5em;
         margin-bottom: 30px;
@@ -341,6 +394,7 @@ button:hover {
 
     .info1 {
         flex-direction: column;
+        gap: 0px;
     }
 
     .img1,
@@ -386,6 +440,29 @@ button:hover {
     }
     .info1 .content1 p{
         font-size: 15px;
+    }
+    .contentUbi p{
+        font-size: 15px;
+        text-align: justify;
+    }
+    .contentUbi b:nth-child(2){
+        color:#355e3b;
+    }
+    .contentUbi h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+   .ubicacion{
+    flex-direction: column;
+   }
+    .ubi{
+         /* Ajusta el máximo a una altura más pequeña */
+        width: 100%;
+        margin-top: 0;
+    }
+    .contentUbi{
+        width: 100%;
+        margin-top: 50px;
     }
 
     button {
@@ -485,6 +562,8 @@ button:hover {
 }
 
 .card{
+
+    
     view-timeline-name: --cartas ;
     view-timeline-axis: block;
 
