@@ -276,6 +276,36 @@ button:hover {
     margin: 0;
 }
 
+
+.seccMapa{
+    width: 100%;
+    position: absolute;
+}
+
+.contentSeccMapa{
+    width: 80%;
+    margin: auto;
+}
+.contentSeccMapa h1{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    width: fit-content;
+}
+
+.contentSM{
+    display: flex;
+    width: 40%;
+}
+.divMapa{
+    width: 40%;
+    display: flex;
+}
+.divMapa img{
+    width: 100%;
+    height: 100%;
+}
+
 /* Diseño responsive */
 @media (max-width:1900px){
     .contentFondo{
