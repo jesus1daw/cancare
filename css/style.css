@@ -280,43 +280,12 @@ button:hover {
     margin: 0;
 }
 
-
-<<<<<<< HEAD
-.seccMapa{
-    width: 100%;
-    position: absolute;
-}
-
-.contentSeccMapa{
-    width: 80%;
-    margin: auto;
-}
-.contentSeccMapa h1{
-    text-align: center;
-    margin: auto;
-    display: flex;
-    width: fit-content;
-}
-
-.contentSM{
-    display: flex;
-    width: 40%;
-}
-.divMapa{
-    width: 40%;
-    display: flex;
-}
-.divMapa img{
-    width: 100%;
-    height: 100%;
-}
-
-=======
 .ubicacion{
     width: 80%;
     margin: 0 auto;
     display: flex;
     gap:10%;
+    /* margin-bottom: 100px; */
 }
 
 .ubi{
@@ -358,7 +327,97 @@ button:hover {
 .contentUbi b:nth-child(2){
     color: #355e3b ;
 }
->>>>>>> refs/remotes/origin/main
+
+.interReserv{
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    /* border-bottom: 2px solid #28c961; */
+}
+
+.seccFormulario{
+    background-color: #FFFFFF;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap:10%;
+    font-family: "Outfit";
+}
+
+.formulario{
+    
+    margin-top: 70px;
+    width: 30%;
+    margin-left: 200px;
+    
+   
+}
+.contentForm{
+    
+    width: 40%;
+    font-family: "Outfit";
+    margin-top: 100px;
+    
+}
+.contentForm h1{
+    color: #28c961;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.contentForm p {
+    line-height: 1.5;
+    color: #444444;
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.contentForm p:nth-of-type(2) {
+    line-height: 1.5;
+    color: #355e3b ;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+form {
+    background: linear-gradient(135deg, #ffffff, #f9f9f9); /* Fondo con ligero degradado */
+    padding: 20px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #8bc34a; /* Verde Lima */
+    box-shadow: 0 0 5px rgba(139, 195, 74, 0.5);
+    outline: none;
+}
+
 /* Diseño responsive */
 @media (max-width:1900px){
     .contentFondo{
@@ -452,9 +511,9 @@ button:hover {
         font-size: 30px;
         margin-bottom: 20px;
     }
-   .ubicacion{
-    flex-direction: column;
-   }
+    .ubicacion{
+        flex-direction: column;
+    }
     .ubi{
          /* Ajusta el máximo a una altura más pequeña */
         width: 100%;
@@ -464,6 +523,48 @@ button:hover {
         width: 100%;
         margin-top: 50px;
     }
+
+    .seccFormulario{
+        flex-direction: column;
+        align-items:center;
+       
+    }
+
+    .formulario{
+        order: 2;
+        margin:0px;
+        width: 80%;
+        
+    }
+    form{
+        width: 80%;
+        font-size:13px;
+    }
+    input{
+        padding:5px;
+    }
+    .contentForm{
+        order: 1;
+        width: 80%;
+        margin-top:40px;
+    }
+    .contentForm p{
+        margin-bottom:10px;
+        font-size: 15px;
+        
+    }
+    .contentForm p:nth-of-type(2){
+        
+        font-size: 15px;
+        
+    }
+    .contentForm h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+        
+        
+    }
+    
 
     button {
         width: 120px;
