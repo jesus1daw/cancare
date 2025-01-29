@@ -302,7 +302,7 @@ button:hover {
 .contentUbi{
     
     width: 60%;
-    flex: 1 0 60%;
+    
     font-family: "Outfit";
     margin-top: 100px;
     
@@ -386,7 +386,8 @@ form {
     padding: 20px 30px;
     border-radius: 16px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    /* width: 100%; */
+    /* El width me hace un desbordamiento */
     
 }
 
@@ -413,7 +414,7 @@ input, select, textarea {
 }
 
 input:focus, select:focus, textarea:focus {
-    border-color: #8bc34a; /* Verde Lima */
+    border-color: #8bc34a; 
     box-shadow: 0 0 5px rgba(139, 195, 74, 0.5);
     outline: none;
 }
@@ -424,7 +425,7 @@ input:focus, select:focus, textarea:focus {
         font-size: 1em;
     }
 }
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .nav {
         font-size: 18px;
         gap: 20px;
@@ -454,6 +455,7 @@ input:focus, select:focus, textarea:focus {
     .info1 {
         flex-direction: column;
         gap: 0px;
+        width: 60%;
     }
 
     .img1,
@@ -463,6 +465,26 @@ input:focus, select:focus, textarea:focus {
 
     .cards {
         gap: 10px;
+    }
+
+    .ubicacion{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contentUbi{
+        width: 100%;
+    }
+    .ubi{
+        width: 50%;
+    }
+
+    .formulario{
+        margin-left: 100px;
+    }
+    .contentForm h1{
+
+    font-size: 2.3em;
+
     }
 }
 
