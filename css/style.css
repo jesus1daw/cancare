@@ -5,7 +5,11 @@ html {
 body {
     margin: 0;
     background-color: #f1f1f1;
+
+
 }
+
+
 
 /* Barra de navegación */
 .barnav {
@@ -76,7 +80,7 @@ body {
 }
 
 .contentFondo {
-    width: 40%; /*Posible error responsive tablets*/
+    width: 40%; 
     font-size: 1.5em;
     font-family: "Outfit";
     position: absolute;
@@ -382,7 +386,7 @@ button:hover {
     text-align: center;
 }
 form {
-    background: linear-gradient(135deg, #ffffff, #f9f9f9); /* Fondo con ligero degradado */
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
     padding: 20px 30px;
     border-radius: 16px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -491,27 +495,27 @@ input:focus, select:focus, textarea:focus {
 @media (max-width: 480px) {
     .contentFondo {
         width: 90%;
-        top: 20%; /* Reducir la separación superior para mejor centrado */
+        top: 20%; 
         left: 5%;
         font-size: 1em;
-        text-align: center; /* Centrar el contenido en pantallas pequeñas */
+        text-align: center; 
     }
     
     .contentFondo h1 {
-        font-size: 1.8em; /* Reducir el tamaño del encabezado */
+        font-size: 1.8em; 
         margin-bottom: 15px;
     }
 
     .contentFondo p {
-        font-size: 0.85em; /* Reducir el tamaño del párrafo */
+        font-size: 0.85em; 
         line-height: 1.3;
-        margin-bottom: 15px; /* Añadir espacio inferior entre párrafos */
+        margin-bottom: 15px; 
     }
     .info1 .img1 img {
-        height: auto; /* Permite que la altura se ajuste automáticamente */
-        max-height: 250px; /* Ajusta el máximo a una altura más pequeña */
+        height: auto; 
+        max-height: 250px; 
         width: 100%;
-        object-fit: cover ; /* Asegura que la imagen se recorte en lugar de deformarse */
+        object-fit: cover ; 
     }
     .content1{
         margin-top: 10px;
@@ -537,7 +541,7 @@ input:focus, select:focus, textarea:focus {
         flex-direction: column;
     }
     .ubi{
-         /* Ajusta el máximo a una altura más pequeña */
+        
         width: 100%;
         margin-top: 0;
     }
@@ -592,12 +596,12 @@ input:focus, select:focus, textarea:focus {
         width: 120px;
         height: 40px;
         font-size: 0.85em;
-        padding: 8px 10px; /* Ajustar padding para hacerlo más compacto */
+        padding: 8px 10px; 
         margin-top: 10px;
     }
 
     .contentFondo a {
-        font-size: 1em; /* Ajustar el tamaño de fuente del enlace */
+        font-size: 1em; 
     }
     .barnav {
         height: 100px;
@@ -608,7 +612,7 @@ input:focus, select:focus, textarea:focus {
     }
 
     .logo {
-        width: 50%; /* Ajustar el tamaño del logo */
+        width: 50%;
         margin: 0 auto;
         text-align: center;
         height: 60%;
@@ -630,11 +634,11 @@ input:focus, select:focus, textarea:focus {
     }
 
     .nav a {
-        font-size: 1em; /* Reducir el tamaño de la fuente */
+        font-size: 1em; 
     }
 
     .content2 h1 {
-        font-size: 1.5em; /* Reducir el tamaño del encabezado */
+        font-size: 1.5em; 
         text-align: center;
     }
     .cards{
