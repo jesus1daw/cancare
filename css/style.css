@@ -8,6 +8,17 @@ body {
 
 
 }
+.custom-tooltip {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0;
+    text-align: center;
+}
+
 
 
 
@@ -29,6 +40,9 @@ body {
     align-items: center;
     
 }
+
+
+
 
 .logo {
     height: 100%;

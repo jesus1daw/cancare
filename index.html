@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=PT+Serif+Caption:ital@0;1&family=Puppies+Play&family=Quintessential&family=Roboto+Slab:wght@100..900&display=swap');
@@ -119,9 +124,7 @@
                 ya sea para paseos, guardería o cuidado a domicilio.
                </p>
         </div>
-        <div class="ubi">
-        <img src="img/mapaMadrid.gif" alt="">
-        </div>
+        <div class="ubi" id="map" style="height: 500px;"></div>
 
     </div>
     <div class="interReserv" id="reserva"></div>
@@ -182,8 +185,9 @@
 
 
 
+<script src="/js/mapa.js">
 
-
+    </script>
 
 
 </html>
