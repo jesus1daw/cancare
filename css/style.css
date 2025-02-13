@@ -309,7 +309,7 @@ button:hover {
 .ubi{
     margin-top: 70px;
     width: 30%;
-    
+    z-index: 0;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 .ubi img{
