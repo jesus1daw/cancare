@@ -5,10 +5,11 @@ var geoJsonData ={
         "type": "Feature",
         "properties": {
           "name": "Majadahonda",
-          "stroke": "#b95f5f",
+          "stroke": "#2c633f",
           "stroke-width": 2,
           "stroke-opacity": 1,
-          "fill": "#c18181",
+
+          "fill": "#3dc86d",
           "fill-opacity": 0.5
         },
         "geometry": {
@@ -51,10 +52,10 @@ var geoJsonData ={
         "type": "Feature",
         "properties": {
           "name": "Las Rozas",
-          "stroke": "#b95f5f",
+          "stroke": "#2c633f",
           "stroke-width": 2,
           "stroke-opacity": 1,
-          "fill": "#c18181",
+          "fill": "#3dc86d",
           "fill-opacity": 0.5
         },
         "geometry": {
@@ -102,10 +103,10 @@ var geoJsonData ={
         "type": "Feature",
         "properties": {
           "name": "Pozuelo de Alarcón",
-          "stroke": "#b95f5f",
+          "stroke": "#2c633f",
           "stroke-width": 2,
           "stroke-opacity": 1,
-          "fill": "#c18181",
+          "fill": "#3dc86d",
           "fill-opacity": 0.5
         },
         "geometry": {
@@ -160,10 +161,10 @@ var geoJsonData ={
         "type": "Feature",
         "properties": {
           "name": "Villanueva del Pardillo",
-          "stroke": "#b95f5f",
+          "stroke": "#2c633f",
           "stroke-width": 2,
           "stroke-opacity": 1,
-          "fill": "#c18181",
+          "fill": "#3dc86d",
           "fill-opacity": 0.5
         },
         "geometry": {
@@ -202,10 +203,10 @@ var geoJsonData ={
         "type": "Feature",
         "properties": {
           "name": "Villafranca",
-          "stroke": "#b95f5f",
+          "stroke": "#2c633f",
           "stroke-width": 2,
           "stroke-opacity": 1,
-          "fill": "#c18181",
+          "fill": "#3dc86d",
           "fill-opacity": 0.5
         },
         "geometry": {
