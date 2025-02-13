@@ -312,6 +312,7 @@ button:hover {
     margin-top: 70px;
     width: 30%;
     z-index: 0;
+    height: 500px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 .ubi img{
@@ -558,8 +559,9 @@ input:focus, select:focus, textarea:focus {
     }
     .ubi{
         
-        width: 100%;
+        width: 90%;
         margin-top: 0;
+        height: 300px;
     }
     .contentUbi{
         width: 100%;
