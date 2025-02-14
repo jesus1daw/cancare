@@ -47,7 +47,7 @@
     <div class="fondo" id="inicio">
         <video src="img/854132-hd_1920_1080_25fps.mp4" autoplay loop muted alt="">
         </video>
-        <div class="contentFondo">
+        <div class="contentFondo" >
             <h1>ADIESTRAMIENTO CANINO EN MADRID</h1>
             <p>Adiestramiento Canino para una Convivencia Feliz y Armoniosa</p>
             <p>Transforma el Comportamiento de tu Perro con Técnicas Profesionales</p>
