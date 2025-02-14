@@ -286,3 +286,22 @@ L.geoJson(geoJsonData, {
     },
     
 }).addTo(map);
+
+
+//EVENTOS CLICK
+
+document.getElementById("iconoLogin").addEventListener("click", function (event) {
+  event.stopPropagation(); // Evita que el clic cierre el menú inmediatamente
+  document.getElementById("dropdownMenu").classList.toggle("show");
+  document.getElementById("iconoLogin").classList.toggle("select");
+});
+
+// Cerrar menú al hacer clic fuera de él
+document.addEventListener("click", function (event) {
+  let dropdown = document.getElementById("dropdownMenu");
+  if (!event.target.closest(".dropdown")) {
+      dropdown.classList.remove("show");
+      document.getElementById("iconoLogin").classList.remove("select");
+  }
+});
+
