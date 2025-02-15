@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+ 
 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     
 
 </head>
@@ -36,8 +38,8 @@
                 </svg>
             </div>
             <div id="dropdownMenu" class="contenidoDrop">
-                <a href="login.php">Iniciar sesión</a>
-                <a href="register.php">Registrarse</a>
+                <a href="php/login.php">Iniciar sesión</a>
+                <a href="php/register.php">Registrarse</a>
             </div>
             
             
@@ -146,8 +148,14 @@
     <div class="interReserv" id="reserva"></div>
 
     <div class="seccFormulario">
-        <div class="formulario">
-            <form action="">
+        <div class="formulario" >
+            <div class="solicitudLogin">
+                <p>
+                Debes iniciar sesion para realizar una reserva
+                </p>
+            </div>
+            <form action=""style="opacity:0.4;pointer-events: none;">
+            
                 <!-- <fieldset> -->
                         <!-- Información del dueño -->
                         <label for="nombre">Nombre del dueño:</label>
@@ -161,17 +169,17 @@
                 
                         <!-- Información de la mascota -->
                         <label for="nombre-mascota">Nombre de la mascota:</label>
-                        <input type="text" id="nombre-mascota" name="nombre_mascota" required> <br>
+                        <input type="text" id="nombre-mascota" name="nombreMascota" required> <br>
                 
                         <label for="tipo-mascota">Raza de la mascota:</label>
-                        <input type="text" id="tipo-mascota" name="tipo_mascota" required>  <br>
+                        <input type="text" id="tipo-mascota" name="razaMascota" required>  <br>
                             
                 
                         <label for="edad">Edad de la mascota:</label>
-                        <input type="text" id="edad" name="edad" required> <br>
+                        <input type="text" id="edad" name="edadMascota" required> <br>
                 
                         <label for="notas">Notas adicionales:</label>
-                        <textarea id="notas" name="notas" rows="4" placeholder="Información sobre alergias, medicamentos, etc."></textarea> <br>
+                        <textarea id="notas" name="notas" rows="4" placeholder="Información sobre alergias, medicamentos, raza, edad etc."></textarea> <br>
                 
                         <!-- Botón de envío -->
                         <button type="submit">Enviar</button>

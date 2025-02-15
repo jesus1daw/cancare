@@ -466,7 +466,6 @@ form {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     /* width: 100%; */
     /* El width me hace un desbordamiento */
-    
 }
 
 h2 {
@@ -497,6 +496,21 @@ input:focus, select:focus, textarea:focus {
     outline: none;
 }
 
+
+.solicitudLogin {
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(141, 67, 67, 0.6); /* Fondo semitransparente */
+    color: rgb(184, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Asegura que esté por encima */
+    opacity: 1; /* Asegura que no tenga transparencia */
+}
 /* Diseño responsive */
 @media (max-width:1900px){
     .contentFondo{
@@ -703,9 +717,7 @@ input:focus, select:focus, textarea:focus {
         
     }
 
-    .contenidoDrop a:first-child{
-        /* border-bottom: solid 1px#a0a9a3; */
-    }
+   
 
     .contenidoDrop.show{
         top: 95%;

@@ -4,12 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Importar SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<?php
 
-    
+session_start();
+
+// Recuperar los datos de sesión
+$userName = $_SESSION['userName'] ?? null;
+$reserva = $_SESSION['reserva'] ?? null;
+
+// Mostrar el mensaje de bienvenida si el usuario está logueado y no hay reserva pendiente
+if ($userName && !$reserva) {
+    echo "<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Swal.fire({
+                title: '¡Bienvenido, $userName!',
+                text: '¡No dudes en reservar tu cita!',
+                icon: 'success',
+                confirmButtonText: 'Aceptar'
+            });
+        });
+    </script>";
+     // Eliminar para evitar que el mensaje se repita
+}
+
+// Mostrar el mensaje de la reserva si la variable 'reserva' está definida
+if ($reserva) {
+    echo "<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Tu reserva ha sido guardada',
+                showConfirmButton: false,
+                timer: 1500
+            });
+        });
+    </script>";
+    unset($_SESSION['reserva']);  // Eliminar para evitar que el mensaje se repita
+}
+?>
 
 </head>
 <style>
@@ -18,9 +57,11 @@
     @import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
     </style>
 <body>
+
+    
     <div class="barnav">
         <div class="logo">
-            <img src="img/logoCancareSinBGrecort.png" alt="">
+            <img src="../img/logoCancareSinBGrecort.png" alt="">
         </div>
         <div class="nav">
             <div class="Inicio"><a href="#inicio">INICIO</a></div>
@@ -37,7 +78,7 @@
             </div>
             <div id="dropdownMenu" class="contenidoDrop">
                 <a href="reservas.php">Mis Reservas</a>
-                <a href="index.php">Cerrar Sesión</a>
+                <a href="../index.php">Cerrar Sesión</a>
             </div>
             
             
@@ -45,7 +86,7 @@
     </div>
     
     <div class="fondo" id="inicio">
-        <video src="img/854132-hd_1920_1080_25fps.mp4" autoplay loop muted alt="">
+        <video src="../img/854132-hd_1920_1080_25fps.mp4" autoplay loop muted alt="">
         </video>
         <div class="contentFondo">
             <h1>ADIESTRAMIENTO CANINO EN MADRID</h1>
@@ -60,19 +101,19 @@
         
         <div class="info1">
             <div class="img1">
-                <img src="img/pexels-creationhill-1242419.jpg" alt="">
+                <img src="../img/pexels-creationhill-1242419.jpg" alt="">
             </div>
             <div class="content1">
                 <h1>SERVICIOS PRINCIPALES</h1>
-                <img src="img/pets_23dp_61DB8A_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <img src="../img/pets_23dp_61DB8A_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 <p><b>Obediencia Básica:</b> Entrenamiento de comandos esenciales.</p>
-                <img src="img/pets_23dp_61DB8A_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <img src="../img/pets_23dp_61DB8A_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 <p><b>Control de Comportamiento:</b> Soluciones para 
                     problemas de ladrido excesivo, masticación, agresividad, etc.</p>
-                <img src="img/pets_23dp_61DB8A_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <img src="../img/pets_23dp_61DB8A_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 <p><b>Entrenamiento Avanzado:</b> Para perros que ya 
                     tienen obediencia básica.</p>
-                <img src="img/pets_23dp_61DB8A_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <img src="../img/pets_23dp_61DB8A_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 <p><b>Socialización:</b> Ayuda a que tu perro se 
                     relacione mejor con otros perros y personas.</p>
     
@@ -92,7 +133,7 @@
                 <div class="cards">
                     <div class="card">
                         <h1>Adiestramiento canino</h1>
-                        <img src="img/iconPerro.svg" alt="">
+                        <img src="../img/iconPerro.svg" alt="">
                         <p>El adiestramiento canino es el proceso de enseñar 
                             a los perros comportamientos específicos mediante 
                             refuerzo positivo, repetición y consistencia. 
@@ -106,7 +147,7 @@
                     </div>
                     <div class="card">
                         <h1>Refuerzo Positivo</h1>
-                        <img src="img/iconHueso.svg" alt="">
+                        <img src="../img/iconHueso.svg" alt="">
                         <p>El refuerzo positivo es una técnica de adiestramiento canino 
                             que recompensa al perro después de realizar una conducta deseada, 
                             aumentando la probabilidad de que se repita. Las recompensas pueden 
@@ -116,7 +157,7 @@
                     </div>
                     <div class="card">
                         <h1>Comportamiento Canino</h1>
-                        <img src="img/iconComport.svg" alt="">
+                        <img src="../img/iconComport.svg" alt="">
                         <p>El comportamiento canino se refiere a cómo los perros reaccionan y 
                             se comunican con su entorno, otros animales y personas. 
                             Cada perro tiene una personalidad única, y el adiestramiento se utiliza para enseñarles a comportarse en diversas situaciones, incluyendo la obediencia, socialización, 
@@ -147,7 +188,7 @@
 
     <div class="seccFormulario">
         <div class="formulario">
-            <form action="">
+            <form action="creaReservas.php" method="post">
                 <!-- <fieldset> -->
                         <!-- Información del dueño -->
                         <label for="nombre">Nombre del dueño:</label>
@@ -158,20 +199,20 @@
                 
                         <label for="email">Correo electrónico:</label>
                         <input type="email" id="email" name="email" required> <br>
+
+                        <label for="direc">Dirección de recogida:</label>
+                        <input type="text" id="direc" name="direccion" required> <br>
+
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" name="fecha" required> <br>
+
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" name="hora" required> <br>
                 
                         <!-- Información de la mascota -->
-                        <label for="nombre-mascota">Nombre de la mascota:</label>
-                        <input type="text" id="nombre-mascota" name="nombre_mascota" required> <br>
-                
-                        <label for="tipo-mascota">Raza de la mascota:</label>
-                        <input type="text" id="tipo-mascota" name="tipo_mascota" required>  <br>
-                            
-                
-                        <label for="edad">Edad de la mascota:</label>
-                        <input type="text" id="edad" name="edad" required> <br>
-                
-                        <label for="notas">Notas adicionales:</label>
-                        <textarea id="notas" name="notas" rows="4" placeholder="Información sobre alergias, medicamentos, etc."></textarea> <br>
+                        
+                        <label for="notas">Notas adicionales sobre la mascota:</label>
+                        <textarea id="notas" name="info" rows="4" placeholder="Información sobre alergias, medicamentos, raza, edad, etc."></textarea> <br>
                 
                         <!-- Botón de envío -->
                         <button type="submit">Enviar</button>
@@ -201,7 +242,9 @@
 
 
 
-<script src="js/mapa.js">
+
+
+<script src="../js/mapa.js">
 
     </script>
 

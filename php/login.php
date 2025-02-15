@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
+<?php
+session_start();
+$error=isset($_SESSION['error']) ? $_SESSION['error']:" ";
+
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +15,18 @@
 <body class="d-flex justify-content-center align-items-center vh-100 bg-light">
     <div class="card p-4 shadow-lg" style="width: 350px;">
         <h3 class="text-center mb-3">Iniciar Sesión</h3>
-        <form action="indexUser.php">
+        <form action="loginBD.php" method="post">
             <div class="mb-3">
-                <label for="email" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="tu@email.com" required>
+                <label for="userName" class="form-label">Nombre de usuario</label>
+                <input type="text" name="userName" class="form-control" id="userName" placeholder="" required>
             </div>
             <div class="mb-3">
-                <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" placeholder="" required>
+                <label for="passwrd" class="form-label">Contraseña</label>
+                <input type="password" name="passwrd" class="form-control" id="passwrd" placeholder="" required>
             </div>
             <button type="submit" class="btn btn-primary w-100">Entrar</button>
+            <span class = "error"><?php echo $error; ?></span>
+            
         </form>
         <div class="text-center mt-3">
             <a href="#">¿Olvidaste tu contraseña?</a>
