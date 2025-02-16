@@ -17,11 +17,7 @@ try {
     // Conexión segura a la base de datos
     $mbd = new PDO('mysql:host=localhost;dbname=cancare', 'cancare', 'admin');
 
-    
 
-   
-
-        
 
         // Consulta preparada (segura contra SQL Injection)
         $stmt = $mbd->prepare('INSERT INTO reservas (userName,nombre,telefono,email,direccion,fecha,hora,info) VALUES (:userName,:nombre,:telefono,:email,:direccion,:fecha,:hora,:info)');

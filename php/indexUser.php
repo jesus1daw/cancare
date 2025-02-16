@@ -77,7 +77,7 @@ if ($reserva) {
                 </svg>
             </div>
             <div id="dropdownMenu" class="contenidoDrop">
-                <a href="reservas.php">Mis Reservas</a>
+                <a href="misReservasBD.php">Mis Reservas</a>
                 <a href="../index.php">Cerrar Sesión</a>
             </div>
             
@@ -92,7 +92,7 @@ if ($reserva) {
             <h1>ADIESTRAMIENTO CANINO EN MADRID</h1>
             <p>Adiestramiento Canino para una Convivencia Feliz y Armoniosa</p>
             <p>Transforma el Comportamiento de tu Perro con Técnicas Profesionales</p>
-            <button><a href="">¡Pide cita ya!</a></button>
+            <button><a href="#form">¡Pide cita ya!</a></button>
         </div>
         
     </div>
@@ -186,7 +186,7 @@ if ($reserva) {
     </div>
     <div class="interReserv" id="reserva"></div>
 
-    <div class="seccFormulario">
+    <div class="seccFormulario" id="form">
         <div class="formulario">
             <form action="creaReservas.php" method="post">
                 <!-- <fieldset> -->

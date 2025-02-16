@@ -53,7 +53,7 @@
             <h1>ADIESTRAMIENTO CANINO EN MADRID</h1>
             <p>Adiestramiento Canino para una Convivencia Feliz y Armoniosa</p>
             <p>Transforma el Comportamiento de tu Perro con Técnicas Profesionales</p>
-            <button><a href="">¡Pide cita ya!</a></button>
+            <button><a href="#form">¡Pide cita ya!</a></button>
         </div>
         
     </div>
@@ -147,7 +147,7 @@
     </div>
     <div class="interReserv" id="reserva"></div>
 
-    <div class="seccFormulario">
+    <div class="seccFormulario" id="form">
         <div class="formulario" >
             <div class="solicitudLogin">
                 <p>
